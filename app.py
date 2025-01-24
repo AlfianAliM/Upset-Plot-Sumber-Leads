@@ -8,15 +8,15 @@ st.title('Upset Plot Visualisasi Sumber Lead')
 def process_and_plot(df):
     # remove coma di data
     df = df.applymap(lambda x: str(x).replace(",", "") if isinstance(x, str) else x)
-    df.iloc[:, 1:] = df.iloc[:, 1:].astype(int)
+    df.iloc[:, 5:] = df.iloc[:, 5:].astype(int)
 
     # kolom pertama diabaikan
-    categories = df.columns[1:]
+    categories = df.columns[5:]
     
     # combinations
     df_combinations = pd.DataFrame({
         "Combination": categories,
-        "Count": df.iloc[0, 1:].values
+        "Count": df.iloc[0, 5:].values
     })
     
     # comb kolom
