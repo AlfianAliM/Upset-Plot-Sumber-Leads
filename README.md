@@ -9,4 +9,5 @@ Interactive Visualizations: Built using Streamlit and UpsetPlot for ease of use 
 
 Prepare a CSV file in the following format or use the provided example file a.csv in the repository
 
-![image](https://github.com/user-attachments/assets/467dd3cd-d8df-468e-ba6f-9a5c4d6649d7)
+![image](https://github.com/user-attachments/assets/4d41039f-4f73-443a-ace3-4e7d84882a2c)
+
