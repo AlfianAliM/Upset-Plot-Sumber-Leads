@@ -6,7 +6,7 @@ import streamlit as st
 st.title('Upset Plot Visualisasi Sumber Lead')
 
 def process_and_plot(df):
-    # Clean data by removing commas and converting to integers
+    # remove coma di data
     df = df.applymap(lambda x: str(x).replace(",", "") if isinstance(x, str) else x)
     df.iloc[:, 1:] = df.iloc[:, 1:].astype(int)
 
@@ -19,7 +19,7 @@ def process_and_plot(df):
         "Count": df.iloc[0, 1:].values
     })
     
-    # Make sure 'Combination' column is a string before splitting
+    # comb kolom
     df_combinations["Combination"] = df_combinations["Combination"].astype(str)
     
     # convert
