@@ -6,16 +6,16 @@ import streamlit as st
 st.title('Upset Plot Visualisasi Sumber Lead')
 
 def process_and_plot(df):
-    # ambil kolom kedua (kolom pertama diabaikan)
+    # kolom pertama diabaikan
     categories = df.columns[1:]
     
-    # kombinasi dari kategori
+    # combinations
     df_combinations = pd.DataFrame({
         "Combination": categories,
-        "Count": df.iloc[0, 1:].values  # Aambil nilai kecuali kolom 1
+        "Count": df.iloc[0, 1:].values
     })
     
-    # mengonversi data format memberships
+    # convert
     upset_data = from_memberships(
         memberships=[comb.split(", ") for comb in df_combinations["Combination"]],
         data=df_combinations["Count"]
