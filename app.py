@@ -10,7 +10,7 @@ def process_and_plot(df):
     df = df.applymap(lambda x: str(x).replace(",", "") if isinstance(x, str) else x)
     df.iloc[:, 5:] = df.iloc[:, 5:].astype(int)
 
-    # kolom pertama diabaikan
+    # kolom 1-5 diabaikan
     categories = df.columns[5:]
     
     # combinations
