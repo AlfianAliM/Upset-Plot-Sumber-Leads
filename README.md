@@ -1,4 +1,4 @@
-Upset Plot Visualizer with Streamlit
+Upset Plot Viz
 
 This project is a Streamlit-based application to visualize data as an Upset Plot. It allows users to upload a CSV file containing category data, processes it, and generates an insightful visual representation of the combinations and counts of categories.
 
