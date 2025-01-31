@@ -3,7 +3,7 @@ from upsetplot import from_memberships, UpSet
 import matplotlib.pyplot as plt
 import streamlit as st
 
-st.title('Upset Plot Visualisasi Sumber Lead')
+st.title('Upset Plot Visualisasi Sumber Lead Impacta')
 
 def process_and_plot(df):
     # remove coma di data
